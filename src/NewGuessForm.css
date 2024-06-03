@@ -1,0 +1,44 @@
+.new-item-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the elements */
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    flex: 1; /* Ensures the input takes up the remaining space */
+}
+
+.btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.rounded-textbox {
+    flex: 1; /* Ensures the input takes up the remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Adds rounded corners to the input */
+    font-size: 16px;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.new-row {
+    animation: slideUp 0.5s ease-in-out;
+}

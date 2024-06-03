@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.guess-table {
+    border-collapse: separate;
+    border-spacing: 10px; /* Add spacing between cells */
+    font-family:  "Roboto Mono", monospace; /* Set the font for the entire page */
+
+}
+
+.guess-table td {
+    width: 100px; /* Set the width of the cells */
+    height: 100px; /* Set the height of the cells */
+    border: 1px solid black; /* Add a border to cells */
+    text-align: center; /* Center the text horizontally */
+    vertical-align: middle; /* Center the text vertically */
+    box-sizing: border-box; /* Include border and padding in the width and height */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.guess-table td:before {
+    content: '';
+    display: inline-block;
+    /* padding-top: 100%; This ensures the height is equal to the width */
+}
+
+.guess-table th {
+    border: none; /* Remove the border for header cells */
+    text-align: center; /* Center the text horizontally */
+}
